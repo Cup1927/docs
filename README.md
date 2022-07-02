@@ -1,63 +1,81 @@
-# GitHub Docs <!-- omit in toc --> 
 
-This repository contains the documentation website code and Markdown source files for [docs.github.com](https://docs.github.com).
+<p align="center"><a href="https://sonali.netlify.app/"><img src="./assets/wedding.gif" width="150px" height="150px"/></a></p>
+<h1 align="center"><a href="https://sonali.netlify.app/">Wedding Invitation</a> :ring: <br> <br> SAVE THE DATE: NOV 29, 2020 <br> <a href="https://sonali.netlify.app/">sonali.netlify.app</a></h1>
 
-GitHub's Docs team works on pre-production content in a private repo that regularly syncs with this public repo.
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/Wedding-Invitation?logo=github)](https://sonali.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/e945f101-f434-45e6-8c33-df855c6b2082/deploy-status)](https://app.netlify.com/sites/sonali/deploys) [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/Wedding-Invitation?logo=github)](https://github.com/vinitshahdeo/Wedding-Invitation)
 
-Use the table of contents icon <img src="./assets/images/table-of-contents.png" width="25" height="25" /> on the top left corner of this document to get to a specific section of this guide quickly.
+## Wedding Invitation :ring:
 
-## Contributing
+<details>
+  <summary><strong>View Invitation</strong></summary>
+  <a href="https://sonali.netlify.app/"><img src="./assets/img/sonali.jpeg" /></a>
+</details>
 
-See [the contributing guide](CONTRIBUTING.md) for detailed instructions on how to get started with our project. 
+With the divine grace of the almighty,
+inviting you and your family to elder sister's wedding to be held on **29th November at [Ashirwad Garden](https://goo.gl/maps/5z5xX2hTYzU8VGEJ9), Ratu, Ranchi from 7:00 PM** onwards.
 
-We accept different [types of contributions](https://github.com/github/docs/blob/main/contributing/types-of-contributions.md), including some that don't require you to write a single line of code.
+- [Download](https://github.com/vinitshahdeo/vinitshahdeo/raw/master/docs/Sonali%20%26%20Gagan.pdf) the Invitation card
 
-On the GitHub Docs site, you can click the make a contribution button to open a pull request for quick fixes like typos, updates, or link fixes.
+- Find [venue](https://goo.gl/maps/5z5xX2hTYzU8VGEJ9) on Google map
 
-<img src="./assets/images/contribution_cta.png" width="400">
+- Visit the [website](https://sonali.netlify.app/) for more details
 
-For more complex contributions, you can open an issue using the most appropriate [issue template](https://github.com/github/docs/issues/new/choose) to describe the changes you'd like to see.
+- See the Facebook [post](https://www.facebook.com/vinit.shahdeo/posts/3521599654622390)
 
-If you're looking for a way to contribute, you can scan through our [existing issues](https://github.com/github/docs/issues) for something to work on. When ready, check out [Getting Started with Contributing](/CONTRIBUTING.md) for detailed instructions.
+- See the [Tweet](https://twitter.com/Vinit_Shahdeo/status/1328570280705482752)
 
-### Join us in discussions
+```js
 
-We use GitHub Discussions to talk about all sorts of topics related to documentation and this site. For example: if you'd like help troubleshooting a PR, have a great new idea, or want to share something amazing you've learned in our docs, join us in the [discussions](https://github.com/github/docs/discussions).
+const newCouple = 'Sonali & Gagan';
 
-### And that's it!
+// Nov 29, 2020
+const weddingDate = new Date(2020, 11, 29);
 
-If you're having trouble with your GitHub account, contact [Support](https://support.github.com/contact).
+// Wedding venue: https://goo.gl/maps/5z5xX2hTYzU8VGEJ9
+const weddingVenue = new Location('Ashirwad Garden, Ranchi');
 
-That's how you can easily become a member of the GitHub Documentation community. :sparkles:
+(function() {
+    newCouple.willTieKnot(weddingDate);
 
-## READMEs
+    // your presence is requested
+    (new Wedding()).acceptInvitation(
+        window.open('https://sonali.netlify.app/')
+    );
+})();
 
-In addition to the README you're reading right now, this repo includes other READMEs that describe the purpose of each subdirectory in more detail:
 
-- [content/README.md](content/README.md)
-- [content/graphql/README.md](content/graphql/README.md)
-- [content/rest/README.md](content/rest/README.md)
-- [contributing/README.md](contributing/README.md)
-- [data/README.md](data/README.md)
-- [data/reusables/README.md](data/reusables/README.md)
-- [data/variables/README.md](data/variables/README.md)
-- [includes/liquid-tags/README.md](includes/liquid-tags/README.md)
-- [includes/README.md](includes/README.md)
-- [components/README.md](components/README.md)
-- [lib/liquid-tags/README.md](lib/liquid-tags/README.md)
-- [middleware/README.md](middleware/README.md)
-- [script/README.md](script/README.md)
-- [stylesheets/README.md](stylesheets/README.md)
-- [tests/README.md](tests/README.md)
+```
 
-## License
+## Are you or your loved ones a *bride-to-be* or *groom-to-be*? 
+> Feel free to use this template to build your wedding website!
 
-The GitHub product documentation in the assets, content, and data folders are licensed under a [CC-BY license](LICENSE).
+To reuse this, follow the steps:
 
-All other code in this repository is licensed under the [MIT license](LICENSE-CODE).
+- *Replace the date in [script.js](https://github.com/vinitshahdeo/Wedding-Invitation/blob/master/js/script.js#L29) to have a timer running for your big day!*
 
-When using the GitHub logos, be sure to follow the [GitHub logo guidelines](https://github.com/logos).
+```js
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 29, 2020 00:00:00").getTime();
+```
 
-## Thanks :purple_heart:
+- *If you wish to change the track which plays on click, edit the `src` in [index.html](https://github.com/vinitshahdeo/Wedding-Invitation/blob/760c4aa437115fc365f5cb86a4b428b0e292b5ba/index.html#L69)*
 
-Thanks for all your contributions and efforts towards improving the GitHub documentation. We thank you being part of our :sparkles: community :sparkles:!
+```html
+<div class="music">
+   <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio> 
+</div>
+```
+
+> <sup>Despite so many new Bollywood and English song options, I prefered to use two-decade-old song, **[Din Shagna Da](https://youtu.be/X0MDALpV29s)**! Ever attended a North Indian Wedding? As soon as the DJ plays [Din Shagna Da](https://youtu.be/Mj4eK5YViCs) song, it means that the much-awaited moment is here and the bride is all set to put her first foot forward to the wedding venue under a breathtaking phoolon ki chaadar. Let's keep the sky-high status of this song untouched! When the website is backed up with a soul-stirring track, the feeling becomes absolutely surreal. **Choose a heart-touching track!** :musical_note: :heart: </sup>
+
+## शुभ विवाह 🎉  ~ Hindi version of this website 👇
+
+[![Wedding Website](https://github-readme-stats.vercel.app/api/pin/?username=vinitshahdeo&repo=wedding-website)](https://github.com/vinitshahdeo/wedding-website/)
+
+### Do not forget to leave a star! :hugs:
+
+Tag me to share your wedding story on Twitter([@Vinit_Shahdeo](https://twitter.com/Vinit_Shahdeo)) :yellow_heart:
+
+<br><sup><i>With warm regards,<br>
+**Vinit Shahdeo**<i></sup><br>
+[![Twitter Follow @Vinit_Shahdeo](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo)
